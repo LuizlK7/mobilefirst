@@ -1,0 +1,48 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/Menu.svg');
+
+    /* para que fosse possível definir os valores de width e height */
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*  para que .lista-menu pudesse utilizar o position: absolute */
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+    
+}
+
+.container__imagem2 {
+    padding: 8px;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+
+    /* o cabeçalho ficará acima da lista */
+    top: 100%;
+}
+
+/* Detecta se o checkbox foi clicado */
+/* ~ === combinador css, vai procurar outro elemento depois dele que tenha a classe lista-menu e vai colocar display block nele*/
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
