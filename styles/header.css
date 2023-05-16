@@ -36,6 +36,7 @@
 .lista-menu {
     display: none;
     position: absolute;
+    width: 60vw;
 
     /* o cabeçalho ficará acima da lista */
     top: 100%;
@@ -45,4 +46,26 @@
 /* ~ === combinador css, vai procurar outro elemento depois dele que tenha a classe lista-menu e vai colocar display block nele*/
 .container__botao:checked ~ .lista-menu {
     display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
 }
