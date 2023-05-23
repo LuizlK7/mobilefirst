@@ -1,5 +1,6 @@
 /* Com isso não sobrecarrega de links css no arquivo HTML e torna o carregamento dos estilos mais rápido, pois quando carregar o style.css irá carregar tudo que ela importou junto  */
 @import url(styles/header.css);
+@import url(styles/banner.css);
 
 
 :root {
