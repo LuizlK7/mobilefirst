@@ -1,0 +1,56 @@
+.card__descricao {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    background-color: var(--branco);
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-size: 16px;
+    font-weight: 700
+}
+
+.descricao__titulo-livro, .descricao__titulo-escritora {
+    color: #002F52;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 3.5em;
+}
+
+.botoes__ancora {
+    background-color: var(--laranja);
+    padding: 0.5em 2.2em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    
+
+}

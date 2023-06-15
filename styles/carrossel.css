@@ -10,10 +10,12 @@
 }
 
 .swiper-slide img {
+    /* para cada imagem aparecer completa */
     width: 100%;
 }
 
 .swiper-button-prev, .swiper-button-next {
+    /* para sumir com os botões de seta para direita / esquerda */
     display: none;
 }
 
@@ -22,3 +24,4 @@
     position: initial;
     margin: .5em 0;
 }
+
