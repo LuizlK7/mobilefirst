@@ -78,6 +78,7 @@
     display: none;
 }
 
+/* Para tablet */
 @media screen and (min-width: 1024px) {
     .container__titulo, .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
@@ -118,4 +119,15 @@
     .cabecalho__menu-hamburguer {
         display: none;
     }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+    
+
 }

@@ -54,7 +54,31 @@
         </div>
 
         <ul class="opcoes">
-            <li class="opcoes__item">Categorias</li>
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            
+            <label for="opcoes-menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-End</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+
+            </ul>
+
             <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</a></li>
         </ul>
@@ -95,38 +119,36 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-
-            <div class="card">
-                <!-- 1ª linha -->
-                <div class="card__descricao">
-                    <!-- 1ª coluna -->
-                    <div class="descricao">
-                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                    </div>
-
-                    <!-- 2ª coluna -->
-                    <img src="assets/Angular.svg" alt="" srcset="">
-                </div>
-
-                    <!-- 2ª linha -->
-                    <div class="card__botoes">
-                        <!-- 1ª coluna -->
-                        <ul class="botoes">
-                            <li class="botoes__item"><img src="assets/Favoritos.svg" alt="" srcset=""></li>
-                            <li class="botoes__item"><img src="assets/Compras.svg" alt="" srcset=""></li>
-                        </ul>
-
-                        <!-- 2ª coluna -->
-                        <a href="#" class="botoes__ancora">Saiba mais</a>
-                    </div>
-                </div>
-
-
     </section>
 
-    <section class="carrossel">
+    <div class="card">
+        <!-- 1ª linha -->
+        <div class="card__descricao">
+            <!-- 1ª coluna -->
+            <div class="descricao">
+                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+
+            <!-- 2ª coluna -->
+            <img src="assets/Angular.svg" alt="" srcset="">
+        </div>
+
+            <!-- 2ª linha -->
+            <div class="card__botoes">
+                <!-- 1ª coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="assets/Favoritos.svg" alt="" srcset=""></li>
+                    <li class="botoes__item"><img src="assets/Compras.svg" alt="" srcset=""></li>
+                </ul>
+
+                <!-- 2ª coluna -->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+    </div>
+
+    <div class="carrossel">
         <h2 class="carrossel__titulo">Mais vendidos</h2>
 
         <!-- Slider main container -->
@@ -153,9 +175,9 @@
             <div class="swiper-scrollbar"></div>
         </div>
 
-    </section>
+    </div>
 
-    <section class="card">
+    <div class="card">
         <div class="card__descricao">
             <div class="descricao">
                 <img class="descricao__estrela" src="assets/Estrelinhas.svg" alt="" srcset="">
@@ -177,7 +199,7 @@
             </div>
         
 
-    </section>
+    </div>
 
     <section class="topicos">
         <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
