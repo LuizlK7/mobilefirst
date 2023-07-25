@@ -9,3 +9,45 @@
 hr {
     margin: 0;
 }
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .lista-rodape {
+        display: block;
+    }
+
+    
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+    }
+
+    .rodape__titulo {
+        padding: 0;
+        font-size: 24px;
+    }
+
+    .lista-rodape__titulo {
+        color: #858585;
+        margin-bottom: 1.5em;
+        font-size: 14px
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        color: #474646;
+        margin-left: 0.5em;
+        font-size: 14px;
+    }
+    
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+}
