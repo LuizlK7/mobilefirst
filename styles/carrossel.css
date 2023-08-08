@@ -48,10 +48,19 @@
 @media screen and (min-width: 1728px) {
     .carrossel__container {
         display: flex;
+        margin: 0 10vw 3em 10vw;
+        align-items: center;
+        gap:  4em;
+    }
+
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
     }
     
-    
-    
+    .swiper {
+        width: 40%;
+    }
     
     
 }

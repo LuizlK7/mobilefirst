@@ -56,3 +56,20 @@
         width: 30%;
     }
 }
+
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        padding: 4em 0;
+        
+        
+        
+    }
+    
+    
+    
+    
+}
