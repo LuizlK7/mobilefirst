@@ -9,6 +9,7 @@
     background-position: center;
 }
 
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -46,6 +47,15 @@
 /* ~ === combinador css, vai procurar outro elemento depois dele que tenha a classe lista-menu e vai colocar display block nele*/
 .container__botao:checked ~ .lista-menu {
     display: block;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url('../assets/Menu Aberto.svg');
+
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
 }
 
 .lista-menu__titulo, .lista-menu__item {
@@ -106,7 +116,7 @@
     }
 
     .opcoes__item {
-        padding: 0 1em;
+        padding: 2em 1em;
         text-transform: uppercase;
         
     }
@@ -129,10 +139,23 @@
         width: auto;
     }
 
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
     .opcoes__botao {
         display: none;
     }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
     
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
 
 }
 
