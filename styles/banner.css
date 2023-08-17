@@ -41,6 +41,11 @@
     .banner__pesquisa::placeholder {
         background-position: 6em;
     }
+
+    .banner__pesquisa:focus::placeholder {
+        color: transparent;
+        background-image:none ;
+    }
 }
 
 

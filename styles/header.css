@@ -157,6 +157,11 @@
         text-decoration: none;
     }
 
+    .opcoes__item:hover {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
 }
 
 
