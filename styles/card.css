@@ -71,6 +71,27 @@
         transform: translateX(5px) scale(1.1);
     }
 
+    #inCoracao:checked ~ label #coracao path{
+        animation: preencher;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes preencher {
+        0% {
+            fill: transparent;
+        }
+        
+        100% {
+            fill: red;
+        }
+    }
+
+    #inCoracao {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1728px) {

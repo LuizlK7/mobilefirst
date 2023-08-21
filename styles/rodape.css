@@ -50,9 +50,17 @@ hr {
         align-items: center;
         margin: 0.6em 0;
     }
+
+    .lista-rodape__link:hover {
+        color: var(--laranja);
+    }
+
+    .lista-rodape__link:active {
+        color: blue;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1728px) {
     .lista-rodape {
         border-left: 1px solid #808080;
         padding: 1em;
